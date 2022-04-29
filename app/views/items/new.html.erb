@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row mt-5">
+
+      <%= form_for @item do |f| %>
+
+				<%= f.label :nom_epice, "1 -" %>
+				<%= f.text_field :nom_epice, placeholder: "Ajout le nom" %>
+
+				<%= f.label :info, "2 -" %>
+				<%=f.text_field :info, placeholder: "Ajout des informations" %>
+
+				<%= f.label :img_url, "3 -" %>
+				<%=f.text_field :img_url, placeholder: "URL de l'image" %>
+
+				<%= f.submit :Création %>
+
+			<% end %>
+
+<%= link_to "Retour à la liste", items_path %>

@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-12 col-sm-8 col-md-4 offset-sm-2 offset-md-4">
+
+    <h1><%= @item.nom_epice %></h1>
+      <p><%= @item.info %></p>
+      <img src="<%= @item.img_url %>", width="200" , height="200">
+
+      <h2>Poids</h2>
+        <select>
+          <option>25g</option>
+          <option>50g</option>
+          <option>75g</option>
+        </select>
+
+      <h2>Quantité</h2>
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+
+<%= link_to "Retour à la liste", items_path %>
+
+    </div>
+  </div>
+</div>

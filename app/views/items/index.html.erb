@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-12 col-sm-8 col-md-4 offset-sm-2 offset-md-4">
+
+<h1> Les épices </h1>
+</div>
+
+  <div class="container">
+    <div class="div">
+      <% @items.each do |item| %>
+        <div class="card_category">
+          <%# <h2><%= link_to famille.name, famille_items_path(famille) %>
+          <h2><%= link_to item.nom_epice, item_path(item)%></h2>
+          <p><%= item.info %></p>
+          <img src="<%= item.img_url %>", width="200" , height="200">
+          <h2>Prix</h2>
+          <h4><%= item.prix %>€</h4>
+      <% end %>
+    </div>
+  </div>
+</div>
