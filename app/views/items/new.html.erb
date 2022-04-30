@@ -11,7 +11,10 @@
 				<%= f.label :info, "2 -" %>
 				<%=f.text_field :info, placeholder: "Ajout des informations" %>
 
-				<%= f.label :img_url, "3 -" %>
+				<%= f.label :prix, "3 -" %>
+				<%=f.number_field :prix, placeholder: "Ajout ton prix" %>
+
+				<%= f.label :img_url, "4 -" %>
 				<%=f.text_field :img_url, placeholder: "URL de l'image" %>
 
 				<%= f.submit :Création %>
