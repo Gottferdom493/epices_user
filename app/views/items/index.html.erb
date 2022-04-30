@@ -4,6 +4,7 @@
 
 <h1> Les épices </h1>
 </div>
+<h2><%= link_to'Ajout ton épice', new_item_path %></h2>
 
   <div class="container">
     <div class="div">
@@ -13,9 +14,10 @@
           <h2><%= link_to item.nom_epice, item_path(item)%></h2>
           <p><%= item.info %></p>
           <img src="<%= item.img_url %>", width="200" , height="200">
-          
+
           <h2>Prix</h2>
           <h4><%= item.prix %>€</h4>
+          <%= link_to "Supprimer", item_path(item), method: :delete, data: {confirm: "tu es sure?"} %>
       <% end %>
     </div>
   </div>
